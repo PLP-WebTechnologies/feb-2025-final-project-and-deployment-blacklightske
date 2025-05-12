@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Blog - Dairy Farming</title>
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    </head>
+    <body>
+        <header>
+            <h1>Dairy Farming Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="btn">Home</a></li>
+                    <li><a href="blog.html" class="btn">Blog</a></li>
+                    <li><a href="about.html" class="btn">About</a></li>
+                    <li><a href="contact.html" class="btn">Contact</a></li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+ <section class="filter-buttons">
+      <button class="filter-btn" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="nutrition">Feeding</button>
+      <button class="filter-btn" data-filter="health">Health</button>
+      <button class="filter-btn" data-filter="breeding">Breeding</button>
+    </section>
+
+            <section>
+                <input type="text" id="searchBox"
+                    placeholder="Search blog topics..." />
+                <div class="blog-posts" id="blogPosts">
+  <!-- Article 1: Feeding -->
+  <article class="blog-card" data-topic="nutrition" id="feeding">
+    <h2>Feeding Dairy Cows for High Milk Yield</h2>
+    <p>What you feed your cows directly influences their health, milk quantity, and quality.</p>
+    <button class="read-more">Read More</button>
+
+    <div class="full-content hidden">
+      <h3>1. Balanced Diet</h3>
+      <p>A good diet includes roughages (like hay or silage), concentrates (grains and oilseeds), and a consistent supply of clean water.</p>
+      <h3>2. Use of Forages</h3>
+      <p>Silage, Napier grass, and maize stovers are great forage options.</p>
+      <h3>3. Feeding Schedule</h3>
+      <p>Feed your cows at the same time daily. Avoid sudden diet changes.</p>
+      <h3>4. Mineral Supplements</h3>
+      <p>Mineral licks or premixes help with fertility and milk quality.</p>
+      <p><em>Tip: Monitor each cow’s body condition score to adjust their ration individually.</em></p>
+      <button class="back-btn">← Back to all posts</button>
+    </div>
+  </article>
+
+  <!-- Article 2: Health -->
+  <article class="blog-card" data-topic="health" id="health">
+    <h2>Common Health Issues in Dairy Cattle</h2>
+    <p>Illness not only lowers productivity but can spread quickly if unchecked.</p>
+    <button class="read-more">Read More</button>
+
+    <div class="full-content hidden">
+      <h3>1. Mastitis</h3>
+      <p>Inflammation of the udder. Clean milking routines and dry cow therapy help prevent it.</p>
+      <h3>2. Foot and Mouth Disease (FMD)</h3>
+      <p>Causes fever, lameness, and loss of appetite. Vaccinate regularly.</p>
+      <h3>3. Digestive Disorders</h3>
+      <p>Introduce feed gradually and offer roughages to avoid bloat or acidosis.</p>
+      <h3>4. Parasites</h3>
+      <p>Deworming and tick control are essential for herd health.</p>
+      <p><em>Pro tip: Keep health records to detect trends or recurring issues.</em></p>
+      <button class="back-btn">← Back to all posts</button>
+    </div>
+  </article>
+
+  <!-- Article 3: Breeding -->
+  <article class="blog-card" data-topic="breeding" id="breeding">
+    <h2>Effective Breeding Practices for Dairy Cattle</h2>
+    <p>Smart breeding improves traits like milk yield, disease resistance, and temperament.</p>
+    <button class="read-more">Read More</button>
+
+    <div class="full-content hidden">
+      <h3>1. Choose the Right Bull or Semen</h3>
+      <p>Look for traits like high milk production, disease resistance, and strong udders.</p>
+      <h3>2. Monitor Heat Signs</h3>
+      <p>Signs include increased activity and clear vaginal mucus.</p>
+      <h3>3. Timely Insemination</h3>
+      <p>Best time is 12–18 hours after first heat sign.</p>
+      <h3>4. Pregnancy Checks</h3>
+      <p>Check 45–60 days after insemination. Culling open cows saves cost.</p>
+      <p><em>Remember: Keep track of each cow’s reproductive history—it helps in future planning.</em></p>
+      <button class="back-btn">← Back to all posts</button>
+    </div>
+  </article>
+</div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Dairy Farming Blog</p>
+        </footer>
+
+        <script src="assets/js/script.js"></script>
+        
+    </body>
+</html>

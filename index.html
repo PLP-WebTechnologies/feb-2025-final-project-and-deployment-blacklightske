@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Dairy Farming Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+    <header>
+        <h1>Dairy Farming Blog</h1>
+        <nav>
+          <ul>
+                <li><a href="index.html" class="btn">Home</a></li>
+                <li><a href="blog.html" class="btn">Blog</a></li>
+                <li><a href="about.html" class="btn">About</a></li>
+                <li><a href="contact.html" class="btn">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Welcome to Our Blog</h2>
+            <p>Explore tips, guides, and stories about modern dairy farming.</p>
+            <a href="blog.html" class="btn">Visit Full Blog</a>
+        </section>
+
+        <section class="image-slider">
+            <div class="slider-container">
+                <!-- Slide 1: Feeding for High Yield -->
+                <div class="slide" onclick="window.location.href='blog.html#feeding'">
+                    <img src="images/download1.jpg" alt="Feeding for High Yield" />
+                    <div class="slide-text">
+                        <h3>Feeding for High Yield</h3>
+                        <p>Boost your cow’s milk output with strategic nutrition.</p>
+                    </div>
+                </div>
+                <!-- Slide 2: Health & Disease Management -->
+                <div class="slide" onclick="window.location.href='blog.html#health'">
+                    <img src="images/download.jpg" alt="Health & Disease Management" />
+                    <div class="slide-text">
+                        <h3>Health & Disease Management</h3>
+                        <p>Spot issues early and ensure a healthy herd.</p>
+                    </div>
+                </div>
+                <!-- Slide 3: Breeding Practices -->
+                <div class="slide" onclick="window.location.href='blog.html#breeding'">
+                    <img src="images/image.jpg" alt="Breeding Practices" />
+                    <div class="slide-text">
+                        <h3>Breeding Practices</h3>
+                        <p>Improve herd genetics through smart breeding techniques.</p>
+                    </div>
+                </div>
+            </div>
+            <button id="btns" class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button id="btns" class="next" onclick="moveSlide(1)">&#10095;</button>
+        </section>
+
+        <section class="blog-preview">
+            <h2>Latest Articles</h2>
+            <div class="preview-grid">
+                <a href="blog.html#feeding" class="preview-card">
+                    <h3>Feeding for High Yield</h3>
+                    <p>Boost your cow’s milk output with strategic nutrition.</p>
+                </a>
+                <a href="blog.html#health" class="preview-card">
+                    <h3>Health & Disease Management</h3>
+                    <p>Spot issues early and ensure a healthy herd.</p>
+                </a>
+                <a href="blog.html#breeding" class="preview-card">
+                    <h3>Breeding Practices</h3>
+                    <p>Improve herd genetics through smart breeding techniques.</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Dairy Farming Blog</p>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
